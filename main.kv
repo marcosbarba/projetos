@@ -1,0 +1,21 @@
+<ShoppingListApp>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+        canvas.before:
+            Color:
+                rgba: 0.8, 0.8, 0.8, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        TextInput:
+            hint_text: 'Adicione um item'
+        Button:
+            text: 'Adicionar item'
+        ScrollView:
+            GridLayout:
+                cols: 1
+                spacing: 5
+                Label:
+                    text: 'Custo total: $0.00'
